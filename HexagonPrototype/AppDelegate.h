@@ -13,16 +13,14 @@
 @interface MyNavigationController : UINavigationController <CCDirectorDelegate>
 @end
 
-@interface AppController : NSObject <UIApplicationDelegate>
-{
+@interface AppController : NSObject <UIApplicationDelegate> {
 	UIWindow *window_;
 	MyNavigationController *navController_;
-
-	CCDirectorIOS	*director_;							// weak ref
+	CCDirectorIOS *__unsafe_unretained director_;
 }
 
-@property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
 @property (readonly) MyNavigationController *navController;
-@property (readonly) CCDirectorIOS *director;
+@property (unsafe_unretained, readonly) CCDirectorIOS *director;
 
 @end

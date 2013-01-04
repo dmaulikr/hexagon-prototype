@@ -27,116 +27,116 @@
 		27B7732A169741F2003E31FC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B77329169741F2003E31FC /* Icon.png */; };
 		27B7732C169741F2003E31FC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7732B169741F2003E31FC /* Icon@2x.png */; };
 		27B7732F169741F2003E31FC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 27B7732E169741F2003E31FC /* iTunesArtwork */; };
-		27B77334169741F2003E31FC /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77333169741F2003E31FC /* CCAction.m */; };
-		27B77337169741F2003E31FC /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77336169741F2003E31FC /* CCActionCamera.m */; };
-		27B7733A169741F2003E31FC /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77339169741F2003E31FC /* CCActionCatmullRom.m */; };
-		27B7733D169741F2003E31FC /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7733C169741F2003E31FC /* CCActionEase.m */; };
-		27B77340169741F2003E31FC /* CCActionGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7733F169741F2003E31FC /* CCActionGrid.m */; };
-		27B77343169741F2003E31FC /* CCActionGrid3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77342169741F2003E31FC /* CCActionGrid3D.m */; };
-		27B77346169741F2003E31FC /* CCActionInstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77345169741F2003E31FC /* CCActionInstant.m */; };
-		27B77349169741F2003E31FC /* CCActionInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77348169741F2003E31FC /* CCActionInterval.m */; };
-		27B7734C169741F2003E31FC /* CCActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7734B169741F2003E31FC /* CCActionManager.m */; };
-		27B7734F169741F2003E31FC /* CCActionPageTurn3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7734E169741F2003E31FC /* CCActionPageTurn3D.m */; };
-		27B77352169741F2003E31FC /* CCActionProgressTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77351169741F2003E31FC /* CCActionProgressTimer.m */; };
-		27B77355169741F2003E31FC /* CCActionTiledGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77354169741F2003E31FC /* CCActionTiledGrid.m */; };
-		27B77358169741F2003E31FC /* CCActionTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77357169741F2003E31FC /* CCActionTween.m */; };
-		27B7735B169741F2003E31FC /* CCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7735A169741F2003E31FC /* CCAnimation.m */; };
-		27B7735E169741F2003E31FC /* CCAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7735D169741F2003E31FC /* CCAnimationCache.m */; };
-		27B77361169741F2003E31FC /* CCAtlasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77360169741F2003E31FC /* CCAtlasNode.m */; };
-		27B77364169741F2003E31FC /* CCCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77363169741F2003E31FC /* CCCamera.m */; };
-		27B77367169741F2003E31FC /* CCClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77366169741F2003E31FC /* CCClippingNode.m */; };
-		27B7736B169741F2003E31FC /* CCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7736A169741F2003E31FC /* CCConfiguration.m */; };
-		27B7736E169741F2003E31FC /* ccDeprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7736D169741F2003E31FC /* ccDeprecated.m */; };
-		27B77371169741F3003E31FC /* CCDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77370169741F3003E31FC /* CCDirector.m */; };
-		27B77374169741F3003E31FC /* CCDrawingPrimitives.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77373169741F3003E31FC /* CCDrawingPrimitives.m */; };
-		27B77377169741F3003E31FC /* CCDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77376169741F3003E31FC /* CCDrawNode.m */; };
-		27B7737A169741F3003E31FC /* ccFPSImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77379169741F3003E31FC /* ccFPSImages.m */; };
-		27B7737D169741F3003E31FC /* CCGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7737C169741F3003E31FC /* CCGLProgram.m */; };
-		27B77380169741F3003E31FC /* ccGLStateCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7737F169741F3003E31FC /* ccGLStateCache.m */; };
-		27B77383169741F3003E31FC /* CCGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77382169741F3003E31FC /* CCGrabber.m */; };
-		27B77386169741F3003E31FC /* CCGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77385169741F3003E31FC /* CCGrid.m */; };
-		27B77389169741F3003E31FC /* CCLabelAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77388169741F3003E31FC /* CCLabelAtlas.m */; };
-		27B7738C169741F3003E31FC /* CCLabelBMFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7738B169741F3003E31FC /* CCLabelBMFont.m */; };
-		27B7738F169741F3003E31FC /* CCLabelTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7738E169741F3003E31FC /* CCLabelTTF.m */; };
-		27B77392169741F3003E31FC /* CCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77391169741F3003E31FC /* CCLayer.m */; };
-		27B77396169741F3003E31FC /* CCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77395169741F3003E31FC /* CCMenu.m */; };
-		27B77399169741F3003E31FC /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77398169741F3003E31FC /* CCMenuItem.m */; };
-		27B7739C169741F3003E31FC /* CCMotionStreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7739B169741F3003E31FC /* CCMotionStreak.m */; };
-		27B7739F169741F3003E31FC /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7739E169741F3003E31FC /* CCNode+Debug.m */; };
-		27B773A2169741F3003E31FC /* CCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A1169741F3003E31FC /* CCNode.m */; };
-		27B773A5169741F3003E31FC /* CCParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A4169741F3003E31FC /* CCParallaxNode.m */; };
-		27B773A8169741F3003E31FC /* CCParticleBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A7169741F3003E31FC /* CCParticleBatchNode.m */; };
-		27B773AB169741F3003E31FC /* CCParticleExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773AA169741F3003E31FC /* CCParticleExamples.m */; };
-		27B773AE169741F3003E31FC /* CCParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773AD169741F3003E31FC /* CCParticleSystem.m */; };
-		27B773B1169741F3003E31FC /* CCParticleSystemQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B0169741F3003E31FC /* CCParticleSystemQuad.m */; };
-		27B773B4169741F3003E31FC /* CCPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B3169741F3003E31FC /* CCPhysicsDebugNode.m */; };
-		27B773B7169741F3003E31FC /* CCPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B6169741F3003E31FC /* CCPhysicsSprite.mm */; };
-		27B773BA169741F3003E31FC /* CCProgressTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B9169741F3003E31FC /* CCProgressTimer.m */; };
-		27B773BE169741F3003E31FC /* CCRenderTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773BD169741F3003E31FC /* CCRenderTexture.m */; };
-		27B773C1169741F3003E31FC /* CCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773C0169741F3003E31FC /* CCScene.m */; };
-		27B773C4169741F3003E31FC /* CCScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773C3169741F3003E31FC /* CCScheduler.m */; };
-		27B773D6169741F4003E31FC /* CCShaderCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773D5169741F4003E31FC /* CCShaderCache.m */; };
-		27B773D9169741F4003E31FC /* ccShaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773D8169741F4003E31FC /* ccShaders.m */; };
-		27B773DC169741F4003E31FC /* CCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773DB169741F4003E31FC /* CCSprite.m */; };
-		27B773DF169741F4003E31FC /* CCSpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773DE169741F4003E31FC /* CCSpriteBatchNode.m */; };
-		27B773E2169741F4003E31FC /* CCSpriteFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E1169741F4003E31FC /* CCSpriteFrame.m */; };
-		27B773E5169741F4003E31FC /* CCSpriteFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E4169741F4003E31FC /* CCSpriteFrameCache.m */; };
-		27B773E8169741F4003E31FC /* CCTexture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E7169741F4003E31FC /* CCTexture2D.m */; };
-		27B773EB169741F4003E31FC /* CCTextureAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773EA169741F4003E31FC /* CCTextureAtlas.m */; };
-		27B773EE169741F4003E31FC /* CCTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773ED169741F4003E31FC /* CCTextureCache.m */; };
-		27B773F1169741F4003E31FC /* CCTexturePVR.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F0169741F4003E31FC /* CCTexturePVR.m */; };
-		27B773F4169741F4003E31FC /* CCTileMapAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F3169741F4003E31FC /* CCTileMapAtlas.m */; };
-		27B773F7169741F4003E31FC /* CCTMXLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F6169741F4003E31FC /* CCTMXLayer.m */; };
-		27B773FA169741F4003E31FC /* CCTMXObjectGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F9169741F4003E31FC /* CCTMXObjectGroup.m */; };
-		27B773FD169741F4003E31FC /* CCTMXTiledMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773FC169741F4003E31FC /* CCTMXTiledMap.m */; };
-		27B77400169741F4003E31FC /* CCTMXXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773FF169741F4003E31FC /* CCTMXXMLParser.m */; };
-		27B77403169741F4003E31FC /* CCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77402169741F4003E31FC /* CCTransition.m */; };
-		27B77406169741F4003E31FC /* CCTransitionPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77405169741F4003E31FC /* CCTransitionPageTurn.m */; };
-		27B77409169741F4003E31FC /* CCTransitionProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77408169741F4003E31FC /* CCTransitionProgress.m */; };
-		27B7740D169741F4003E31FC /* cocos2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7740C169741F4003E31FC /* cocos2d.m */; };
-		27B77414169741F4003E31FC /* CCDirectorIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77413169741F4003E31FC /* CCDirectorIOS.m */; };
-		27B77417169741F4003E31FC /* CCES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77416169741F4003E31FC /* CCES2Renderer.m */; };
-		27B7741B169741F4003E31FC /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7741A169741F4003E31FC /* CCGLView.m */; };
-		27B7741F169741F4003E31FC /* CCTouchDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7741E169741F4003E31FC /* CCTouchDispatcher.m */; };
-		27B77422169741F4003E31FC /* CCTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77421169741F4003E31FC /* CCTouchHandler.m */; };
-		27B77426169741F4003E31FC /* CCDirectorMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77425169741F4003E31FC /* CCDirectorMac.m */; };
-		27B77429169741F4003E31FC /* CCEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77428169741F4003E31FC /* CCEventDispatcher.m */; };
-		27B7742C169741F4003E31FC /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7742B169741F4003E31FC /* CCGLView.m */; };
-		27B7742F169741F4003E31FC /* CCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7742E169741F4003E31FC /* CCWindow.m */; };
-		27B77432169741F4003E31FC /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77431169741F4003E31FC /* base64.c */; };
-		27B77436169741F4003E31FC /* CCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77435169741F4003E31FC /* CCArray.m */; };
-		27B77439169741F4003E31FC /* ccCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77438169741F4003E31FC /* ccCArray.m */; };
-		27B7743C169741F4003E31FC /* CCFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7743B169741F4003E31FC /* CCFileUtils.m */; };
-		27B7743F169741F4003E31FC /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7743E169741F4003E31FC /* CCProfiling.m */; };
-		27B77441169741F4003E31FC /* ccUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77440169741F4003E31FC /* ccUtils.c */; };
-		27B77445169741F4003E31FC /* CCVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77444169741F4003E31FC /* CCVertex.m */; };
-		27B77448169741F4003E31FC /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77447169741F4003E31FC /* CGPointExtension.m */; };
-		27B7744B169741F4003E31FC /* NSThread+performBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7744A169741F4003E31FC /* NSThread+performBlock.m */; };
-		27B7744F169741F4003E31FC /* TGAlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7744E169741F4003E31FC /* TGAlib.m */; };
-		27B77452169741F4003E31FC /* TransformUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77451169741F4003E31FC /* TransformUtils.m */; };
-		27B77457169741F5003E31FC /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77456169741F5003E31FC /* ZipUtils.m */; };
-		27B7745C169741F5003E31FC /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7745B169741F5003E31FC /* CDAudioManager.m */; };
-		27B77460169741F5003E31FC /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7745F169741F5003E31FC /* CDOpenALSupport.m */; };
-		27B77463169741F5003E31FC /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77462169741F5003E31FC /* CocosDenshion.m */; };
-		27B77466169741F5003E31FC /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77465169741F5003E31FC /* SimpleAudioEngine.m */; };
-		27B7747C169741F5003E31FC /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7747B169741F5003E31FC /* aabb.c */; };
+		27B77334169741F2003E31FC /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77333169741F2003E31FC /* CCAction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77337169741F2003E31FC /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77336169741F2003E31FC /* CCActionCamera.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7733A169741F2003E31FC /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77339169741F2003E31FC /* CCActionCatmullRom.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7733D169741F2003E31FC /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7733C169741F2003E31FC /* CCActionEase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77340169741F2003E31FC /* CCActionGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7733F169741F2003E31FC /* CCActionGrid.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77343169741F2003E31FC /* CCActionGrid3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77342169741F2003E31FC /* CCActionGrid3D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77346169741F2003E31FC /* CCActionInstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77345169741F2003E31FC /* CCActionInstant.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77349169741F2003E31FC /* CCActionInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77348169741F2003E31FC /* CCActionInterval.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7734C169741F2003E31FC /* CCActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7734B169741F2003E31FC /* CCActionManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7734F169741F2003E31FC /* CCActionPageTurn3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7734E169741F2003E31FC /* CCActionPageTurn3D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77352169741F2003E31FC /* CCActionProgressTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77351169741F2003E31FC /* CCActionProgressTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77355169741F2003E31FC /* CCActionTiledGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77354169741F2003E31FC /* CCActionTiledGrid.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77358169741F2003E31FC /* CCActionTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77357169741F2003E31FC /* CCActionTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7735B169741F2003E31FC /* CCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7735A169741F2003E31FC /* CCAnimation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7735E169741F2003E31FC /* CCAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7735D169741F2003E31FC /* CCAnimationCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77361169741F2003E31FC /* CCAtlasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77360169741F2003E31FC /* CCAtlasNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77364169741F2003E31FC /* CCCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77363169741F2003E31FC /* CCCamera.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77367169741F2003E31FC /* CCClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77366169741F2003E31FC /* CCClippingNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7736B169741F2003E31FC /* CCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7736A169741F2003E31FC /* CCConfiguration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7736E169741F2003E31FC /* ccDeprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7736D169741F2003E31FC /* ccDeprecated.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77371169741F3003E31FC /* CCDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77370169741F3003E31FC /* CCDirector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77374169741F3003E31FC /* CCDrawingPrimitives.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77373169741F3003E31FC /* CCDrawingPrimitives.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77377169741F3003E31FC /* CCDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77376169741F3003E31FC /* CCDrawNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7737A169741F3003E31FC /* ccFPSImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77379169741F3003E31FC /* ccFPSImages.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7737D169741F3003E31FC /* CCGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7737C169741F3003E31FC /* CCGLProgram.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77380169741F3003E31FC /* ccGLStateCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7737F169741F3003E31FC /* ccGLStateCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77383169741F3003E31FC /* CCGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77382169741F3003E31FC /* CCGrabber.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77386169741F3003E31FC /* CCGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77385169741F3003E31FC /* CCGrid.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77389169741F3003E31FC /* CCLabelAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77388169741F3003E31FC /* CCLabelAtlas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7738C169741F3003E31FC /* CCLabelBMFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7738B169741F3003E31FC /* CCLabelBMFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7738F169741F3003E31FC /* CCLabelTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7738E169741F3003E31FC /* CCLabelTTF.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77392169741F3003E31FC /* CCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77391169741F3003E31FC /* CCLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77396169741F3003E31FC /* CCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77395169741F3003E31FC /* CCMenu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77399169741F3003E31FC /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77398169741F3003E31FC /* CCMenuItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7739C169741F3003E31FC /* CCMotionStreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7739B169741F3003E31FC /* CCMotionStreak.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7739F169741F3003E31FC /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7739E169741F3003E31FC /* CCNode+Debug.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773A2169741F3003E31FC /* CCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A1169741F3003E31FC /* CCNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773A5169741F3003E31FC /* CCParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A4169741F3003E31FC /* CCParallaxNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773A8169741F3003E31FC /* CCParticleBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773A7169741F3003E31FC /* CCParticleBatchNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773AB169741F3003E31FC /* CCParticleExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773AA169741F3003E31FC /* CCParticleExamples.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773AE169741F3003E31FC /* CCParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773AD169741F3003E31FC /* CCParticleSystem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773B1169741F3003E31FC /* CCParticleSystemQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B0169741F3003E31FC /* CCParticleSystemQuad.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773B4169741F3003E31FC /* CCPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B3169741F3003E31FC /* CCPhysicsDebugNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773B7169741F3003E31FC /* CCPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B6169741F3003E31FC /* CCPhysicsSprite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773BA169741F3003E31FC /* CCProgressTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773B9169741F3003E31FC /* CCProgressTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773BE169741F3003E31FC /* CCRenderTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773BD169741F3003E31FC /* CCRenderTexture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773C1169741F3003E31FC /* CCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773C0169741F3003E31FC /* CCScene.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773C4169741F3003E31FC /* CCScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773C3169741F3003E31FC /* CCScheduler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773D6169741F4003E31FC /* CCShaderCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773D5169741F4003E31FC /* CCShaderCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773D9169741F4003E31FC /* ccShaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773D8169741F4003E31FC /* ccShaders.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773DC169741F4003E31FC /* CCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773DB169741F4003E31FC /* CCSprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773DF169741F4003E31FC /* CCSpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773DE169741F4003E31FC /* CCSpriteBatchNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773E2169741F4003E31FC /* CCSpriteFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E1169741F4003E31FC /* CCSpriteFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773E5169741F4003E31FC /* CCSpriteFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E4169741F4003E31FC /* CCSpriteFrameCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773E8169741F4003E31FC /* CCTexture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773E7169741F4003E31FC /* CCTexture2D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773EB169741F4003E31FC /* CCTextureAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773EA169741F4003E31FC /* CCTextureAtlas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773EE169741F4003E31FC /* CCTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773ED169741F4003E31FC /* CCTextureCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773F1169741F4003E31FC /* CCTexturePVR.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F0169741F4003E31FC /* CCTexturePVR.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773F4169741F4003E31FC /* CCTileMapAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F3169741F4003E31FC /* CCTileMapAtlas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773F7169741F4003E31FC /* CCTMXLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F6169741F4003E31FC /* CCTMXLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773FA169741F4003E31FC /* CCTMXObjectGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773F9169741F4003E31FC /* CCTMXObjectGroup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B773FD169741F4003E31FC /* CCTMXTiledMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773FC169741F4003E31FC /* CCTMXTiledMap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77400169741F4003E31FC /* CCTMXXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B773FF169741F4003E31FC /* CCTMXXMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77403169741F4003E31FC /* CCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77402169741F4003E31FC /* CCTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77406169741F4003E31FC /* CCTransitionPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77405169741F4003E31FC /* CCTransitionPageTurn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77409169741F4003E31FC /* CCTransitionProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77408169741F4003E31FC /* CCTransitionProgress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7740D169741F4003E31FC /* cocos2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7740C169741F4003E31FC /* cocos2d.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77414169741F4003E31FC /* CCDirectorIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77413169741F4003E31FC /* CCDirectorIOS.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77417169741F4003E31FC /* CCES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77416169741F4003E31FC /* CCES2Renderer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7741B169741F4003E31FC /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7741A169741F4003E31FC /* CCGLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7741F169741F4003E31FC /* CCTouchDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7741E169741F4003E31FC /* CCTouchDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77422169741F4003E31FC /* CCTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77421169741F4003E31FC /* CCTouchHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77426169741F4003E31FC /* CCDirectorMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77425169741F4003E31FC /* CCDirectorMac.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77429169741F4003E31FC /* CCEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77428169741F4003E31FC /* CCEventDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7742C169741F4003E31FC /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7742B169741F4003E31FC /* CCGLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7742F169741F4003E31FC /* CCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7742E169741F4003E31FC /* CCWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77432169741F4003E31FC /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77431169741F4003E31FC /* base64.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77436169741F4003E31FC /* CCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77435169741F4003E31FC /* CCArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77439169741F4003E31FC /* ccCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77438169741F4003E31FC /* ccCArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7743C169741F4003E31FC /* CCFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7743B169741F4003E31FC /* CCFileUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7743F169741F4003E31FC /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7743E169741F4003E31FC /* CCProfiling.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77441169741F4003E31FC /* ccUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77440169741F4003E31FC /* ccUtils.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77445169741F4003E31FC /* CCVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77444169741F4003E31FC /* CCVertex.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77448169741F4003E31FC /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77447169741F4003E31FC /* CGPointExtension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7744B169741F4003E31FC /* NSThread+performBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7744A169741F4003E31FC /* NSThread+performBlock.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7744F169741F4003E31FC /* TGAlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7744E169741F4003E31FC /* TGAlib.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77452169741F4003E31FC /* TransformUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77451169741F4003E31FC /* TransformUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77457169741F5003E31FC /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77456169741F5003E31FC /* ZipUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7745C169741F5003E31FC /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7745B169741F5003E31FC /* CDAudioManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77460169741F5003E31FC /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7745F169741F5003E31FC /* CDOpenALSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77463169741F5003E31FC /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77462169741F5003E31FC /* CocosDenshion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77466169741F5003E31FC /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77465169741F5003E31FC /* SimpleAudioEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7747C169741F5003E31FC /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7747B169741F5003E31FC /* aabb.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		27B7747E169741F5003E31FC /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 27B7747D169741F5003E31FC /* ChangeLog */; };
-		27B77482169741F5003E31FC /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77481169741F5003E31FC /* mat4stack.c */; };
-		27B77484169741F5003E31FC /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77483169741F5003E31FC /* matrix.c */; };
-		27B77486169741F5003E31FC /* mat3.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77485169741F5003E31FC /* mat3.c */; };
-		27B77488169741F5003E31FC /* mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77487169741F5003E31FC /* mat4.c */; };
-		27B7748A169741F5003E31FC /* neon_matrix_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77489169741F5003E31FC /* neon_matrix_impl.c */; };
-		27B7748C169741F5003E31FC /* plane.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748B169741F5003E31FC /* plane.c */; };
-		27B7748E169741F5003E31FC /* quaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748D169741F5003E31FC /* quaternion.c */; };
-		27B77490169741F5003E31FC /* ray2.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748F169741F5003E31FC /* ray2.c */; };
-		27B77492169741F5003E31FC /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77491169741F5003E31FC /* utility.c */; };
-		27B77494169741F5003E31FC /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77493169741F5003E31FC /* vec2.c */; };
-		27B77496169741F5003E31FC /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77495169741F5003E31FC /* vec3.c */; };
-		27B77498169741F5003E31FC /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77497169741F5003E31FC /* vec4.c */; };
+		27B77482169741F5003E31FC /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77481169741F5003E31FC /* mat4stack.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77484169741F5003E31FC /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77483169741F5003E31FC /* matrix.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77486169741F5003E31FC /* mat3.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77485169741F5003E31FC /* mat3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77488169741F5003E31FC /* mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77487169741F5003E31FC /* mat4.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7748A169741F5003E31FC /* neon_matrix_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77489169741F5003E31FC /* neon_matrix_impl.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7748C169741F5003E31FC /* plane.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748B169741F5003E31FC /* plane.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B7748E169741F5003E31FC /* quaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748D169741F5003E31FC /* quaternion.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77490169741F5003E31FC /* ray2.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B7748F169741F5003E31FC /* ray2.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77492169741F5003E31FC /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77491169741F5003E31FC /* utility.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77494169741F5003E31FC /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77493169741F5003E31FC /* vec2.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77496169741F5003E31FC /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77495169741F5003E31FC /* vec3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27B77498169741F5003E31FC /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B77497169741F5003E31FC /* vec4.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		27B7749D169741F5003E31FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7749C169741F5003E31FC /* main.m */; };
 		27B774A0169741F5003E31FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7749F169741F5003E31FC /* AppDelegate.m */; };
-		27B774A3169741F5003E31FC /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B774A2169741F5003E31FC /* HelloWorldLayer.m */; };
 		27B774A6169741F5003E31FC /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B774A5169741F5003E31FC /* IntroLayer.m */; };
+		27B774AF1697423F003E31FC /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B774AE1697423F003E31FC /* MainLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -409,10 +409,10 @@
 		27B7749C169741F5003E31FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27B7749E169741F5003E31FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27B7749F169741F5003E31FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27B774A1169741F5003E31FC /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		27B774A2169741F5003E31FC /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		27B774A4169741F5003E31FC /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		27B774A5169741F5003E31FC /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		27B774AD1697423F003E31FC /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
+		27B774AE1697423F003E31FC /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,10 +473,7 @@
 			children = (
 				27B7749E169741F5003E31FC /* AppDelegate.h */,
 				27B7749F169741F5003E31FC /* AppDelegate.m */,
-				27B774A1169741F5003E31FC /* HelloWorldLayer.h */,
-				27B774A2169741F5003E31FC /* HelloWorldLayer.m */,
-				27B774A4169741F5003E31FC /* IntroLayer.h */,
-				27B774A5169741F5003E31FC /* IntroLayer.m */,
+				27B774AC16974218003E31FC /* Layers */,
 				27B77318169741F2003E31FC /* Resources */,
 				27B77330169741F2003E31FC /* libs */,
 				27B7749A169741F5003E31FC /* Supporting Files */,
@@ -858,6 +855,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27B774AC16974218003E31FC /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				27B774A4169741F5003E31FC /* IntroLayer.h */,
+				27B774A5169741F5003E31FC /* IntroLayer.m */,
+				27B774AD1697423F003E31FC /* MainLayer.h */,
+				27B774AE1697423F003E31FC /* MainLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1038,8 +1046,8 @@
 				27B77498169741F5003E31FC /* vec4.c in Sources */,
 				27B7749D169741F5003E31FC /* main.m in Sources */,
 				27B774A0169741F5003E31FC /* AppDelegate.m in Sources */,
-				27B774A3169741F5003E31FC /* HelloWorldLayer.m in Sources */,
 				27B774A6169741F5003E31FC /* IntroLayer.m in Sources */,
+				27B774AF1697423F003E31FC /* MainLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,6 +1098,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1109,6 +1118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HexagonPrototype/Prefix.pch;
