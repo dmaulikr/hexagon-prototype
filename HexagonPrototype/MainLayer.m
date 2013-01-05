@@ -19,10 +19,8 @@
 
 - (id)init {
 	if (self = [super init]) {
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-		CGSize size = [[CCDirector sharedDirector] winSize];
-		label.position =  ccp(size.width /2 , size.height/2);
-		[self addChild: label];
+		_hexLayer = [[HexagonMapLayer alloc] init];
+		[self addChild:_hexLayer];
 	}
 	return self;
 }

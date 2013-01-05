@@ -1,5 +1,5 @@
 //
-//  MainLayer.h
+//  Hexagon.h
 //  HexagonPrototype
 //
 //  Created by Kyle Stevens on 1/4/13.
@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "HexagonMapLayer.h"
 
-@interface MainLayer : CCLayer {
-	HexagonMapLayer *_hexLayer;
-}
+@interface Hexagon : NSObject
 
-+ (CCScene *)scene;
+@property (strong) CCSprite *sprite;
+
+- (id)initWithSprite:(CCSprite *)sprite;
 
 @end
