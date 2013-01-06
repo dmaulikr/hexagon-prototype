@@ -12,6 +12,7 @@
 
 @interface HexagonMapLayer : CCLayer <UIGestureRecognizerDelegate> {
 	HexagonMap *_map;
+	Hexagon *_selectedHexagon;
 }
 
 - (void)handlePinch:(UIPinchGestureRecognizer *)sender;

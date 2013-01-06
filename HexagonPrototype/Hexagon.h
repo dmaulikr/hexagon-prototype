@@ -9,10 +9,32 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface Hexagon : NSObject
+typedef enum {
+	kNorthEast,
+	kSouthEast,
+	kSouthWest,
+	kNorthWest,
+	kEast,
+	kWest
+} Direction;
 
-@property (strong) CCSprite *sprite;
+@interface Hexagon : NSObject {
+	NSString *_spriteFrameName;
+	NSString *_spriteFrameNameSelected;
+}
 
-- (id)initWithSprite:(CCSprite *)sprite;
+@property (nonatomic, strong) CCSprite *sprite;
+@property (nonatomic, assign) BOOL selected;
+@property (nonatomic, assign) CGPoint mapCoordinates;
+
+- (id)initWithSpriteFrameName:(NSString *)spriteFrameName;
+- (BOOL)isInBounds:(CGPoint)point;
+
+#pragma mark Dimensional Methods
+
+- (float)radius;
+- (float)width;
+- (float)halfWidth;
+- (float)rowHeight;
 
 @end

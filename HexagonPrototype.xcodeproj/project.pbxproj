@@ -10,10 +10,10 @@
 		2707ADE9169747D80014D2E9 /* HexagonMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADE8169747D80014D2E9 /* HexagonMapLayer.m */; };
 		2707ADF116974A740014D2E9 /* Hexagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADF016974A740014D2E9 /* Hexagon.m */; };
 		2707ADFC16975DE40014D2E9 /* HexagonMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADFB16975DE40014D2E9 /* HexagonMap.m */; };
-		2707AE01169761150014D2E9 /* HexagonSprites-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707ADFD169761150014D2E9 /* HexagonSprites-hd.plist */; };
-		2707AE02169761150014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707ADFE169761150014D2E9 /* HexagonSprites-hd.pvr.ccz */; };
-		2707AE03169761150014D2E9 /* HexagonSprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707ADFF169761150014D2E9 /* HexagonSprites.plist */; };
-		2707AE04169761150014D2E9 /* HexagonSprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE00169761150014D2E9 /* HexagonSprites.pvr.ccz */; };
+		2707AE1E1698C19C0014D2E9 /* HexagonSprites-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE1A1698C19C0014D2E9 /* HexagonSprites-hd.plist */; };
+		2707AE1F1698C19C0014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE1B1698C19C0014D2E9 /* HexagonSprites-hd.pvr.ccz */; };
+		2707AE201698C19C0014D2E9 /* HexagonSprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE1C1698C19C0014D2E9 /* HexagonSprites.plist */; };
+		2707AE211698C19C0014D2E9 /* HexagonSprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE1D1698C19C0014D2E9 /* HexagonSprites.pvr.ccz */; };
 		27B77306169741F2003E31FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77305169741F2003E31FC /* QuartzCore.framework */; };
 		27B77308169741F2003E31FC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77307169741F2003E31FC /* OpenGLES.framework */; };
 		27B7730A169741F2003E31FC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77309169741F2003E31FC /* OpenAL.framework */; };
@@ -153,10 +153,10 @@
 		2707ADF016974A740014D2E9 /* Hexagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hexagon.m; sourceTree = "<group>"; };
 		2707ADFA16975DE40014D2E9 /* HexagonMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonMap.h; sourceTree = "<group>"; };
 		2707ADFB16975DE40014D2E9 /* HexagonMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonMap.m; sourceTree = "<group>"; };
-		2707ADFD169761150014D2E9 /* HexagonSprites-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HexagonSprites-hd.plist"; sourceTree = "<group>"; };
-		2707ADFE169761150014D2E9 /* HexagonSprites-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HexagonSprites-hd.pvr.ccz"; sourceTree = "<group>"; };
-		2707ADFF169761150014D2E9 /* HexagonSprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HexagonSprites.plist; sourceTree = "<group>"; };
-		2707AE00169761150014D2E9 /* HexagonSprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = HexagonSprites.pvr.ccz; sourceTree = "<group>"; };
+		2707AE1A1698C19C0014D2E9 /* HexagonSprites-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HexagonSprites-hd.plist"; sourceTree = "<group>"; };
+		2707AE1B1698C19C0014D2E9 /* HexagonSprites-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HexagonSprites-hd.pvr.ccz"; sourceTree = "<group>"; };
+		2707AE1C1698C19C0014D2E9 /* HexagonSprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HexagonSprites.plist; sourceTree = "<group>"; };
+		2707AE1D1698C19C0014D2E9 /* HexagonSprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = HexagonSprites.pvr.ccz; sourceTree = "<group>"; };
 		27B77301169741F2003E31FC /* HexagonPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexagonPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B77305169741F2003E31FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		27B77307169741F2003E31FC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -513,10 +513,10 @@
 		27B77318169741F2003E31FC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2707ADFD169761150014D2E9 /* HexagonSprites-hd.plist */,
-				2707ADFE169761150014D2E9 /* HexagonSprites-hd.pvr.ccz */,
-				2707ADFF169761150014D2E9 /* HexagonSprites.plist */,
-				2707AE00169761150014D2E9 /* HexagonSprites.pvr.ccz */,
+				2707AE1A1698C19C0014D2E9 /* HexagonSprites-hd.plist */,
+				2707AE1B1698C19C0014D2E9 /* HexagonSprites-hd.pvr.ccz */,
+				2707AE1C1698C19C0014D2E9 /* HexagonSprites.plist */,
+				2707AE1D1698C19C0014D2E9 /* HexagonSprites.pvr.ccz */,
 				27B77319169741F2003E31FC /* Default.png */,
 				27B7731B169741F2003E31FC /* Default@2x.png */,
 				27B7731D169741F2003E31FC /* Default-568h@2x.png */,
@@ -964,10 +964,10 @@
 				27B7732C169741F2003E31FC /* Icon@2x.png in Resources */,
 				27B7732F169741F2003E31FC /* iTunesArtwork in Resources */,
 				27B7747E169741F5003E31FC /* ChangeLog in Resources */,
-				2707AE01169761150014D2E9 /* HexagonSprites-hd.plist in Resources */,
-				2707AE02169761150014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */,
-				2707AE03169761150014D2E9 /* HexagonSprites.plist in Resources */,
-				2707AE04169761150014D2E9 /* HexagonSprites.pvr.ccz in Resources */,
+				2707AE1E1698C19C0014D2E9 /* HexagonSprites-hd.plist in Resources */,
+				2707AE1F1698C19C0014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */,
+				2707AE201698C19C0014D2E9 /* HexagonSprites.plist in Resources */,
+				2707AE211698C19C0014D2E9 /* HexagonSprites.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
