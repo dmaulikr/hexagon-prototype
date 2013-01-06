@@ -18,6 +18,15 @@ typedef enum {
 	kWest
 } Direction;
 
+typedef enum {
+	kBlue = 0,
+	kGreen = 1,
+	kOrange = 2,
+	kPurple = 3,
+	kRed = 4,
+	kYellow = 5
+} Color;
+
 @interface Hexagon : NSObject {
 	NSString *_spriteFrameName;
 	NSString *_spriteFrameNameSelected;
@@ -26,6 +35,9 @@ typedef enum {
 @property (nonatomic, strong) CCSprite *sprite;
 @property (nonatomic, assign) BOOL selected;
 @property (nonatomic, assign) CGPoint mapCoordinates;
+@property (nonatomic, readonly) CCLabelTTF *valueLabel;
+@property (nonatomic, assign) float value;
+@property (nonatomic, assign) Color color;
 
 - (id)initWithSpriteFrameName:(NSString *)spriteFrameName;
 - (BOOL)isInBounds:(CGPoint)point;

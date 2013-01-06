@@ -15,6 +15,8 @@
 		self.sprite = [CCSprite spriteWithSpriteFrameName:spriteFrameName];
 		_spriteFrameName = spriteFrameName;
 		_spriteFrameNameSelected = [spriteFrameName stringByReplacingOccurrencesOfString:@".png" withString:@"-selected.png"];
+		
+		_valueLabel = [CCLabelTTF labelWithString:@"" fontName:@"Helvetica" fontSize:20];
 	}
 	return self;
 }
@@ -39,6 +41,30 @@
 		[self.sprite setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:_spriteFrameName]];
 	}
 	_selected = selected;
+}
+
+- (void)setValue:(float)value {
+	_value = value;
+	_valueLabel.string = [NSString stringWithFormat:@"%.01f", value];
+}
+
+- (void)setColor:(Color)color {
+	_color = color;
+	switch (color) {
+		case kBlue: _spriteFrameName = @"blue.png"; break;
+		case kGreen: _spriteFrameName = @"green.png"; break;
+		case kOrange: _spriteFrameName = @"orange.png"; break;
+		case kPurple: _spriteFrameName = @"purple.png"; break;
+		case kRed: _spriteFrameName = @"red.png"; break;
+		case kYellow: _spriteFrameName = @"yellow.png"; break;
+		default: break;
+	}
+	_spriteFrameNameSelected = [_spriteFrameName stringByReplacingOccurrencesOfString:@".png" withString:@"-selected.png"];
+	if (_selected) {
+		[self.sprite setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:_spriteFrameNameSelected]];
+	} else {
+		[self.sprite setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:_spriteFrameName]];
+	}
 }
 
 #pragma mark Dimensional Methods

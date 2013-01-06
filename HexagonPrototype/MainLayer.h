@@ -12,6 +12,9 @@
 
 @interface MainLayer : CCLayer {
 	HexagonMapLayer *_hexLayer;
+	
+	CCMenu *_menu;
+	CCMenuItemImage *_colorButton, *_incrementButton, *_decrementButton;
 }
 
 + (CCScene *)scene;

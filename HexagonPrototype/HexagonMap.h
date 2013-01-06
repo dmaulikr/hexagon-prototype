@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) int rows;
 @property (nonatomic, readonly) int columns;
 
-- (id)initUsingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns;
+- (id)initInLayer:(CCLayer *)layer usingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns;
 - (Hexagon *)findHexagonContainingPoint:(CGPoint)point;
 - (CGPoint)neighborOfHexagon:(Hexagon *)hexagon inDirection:(Direction)direction;
 - (NSSet *)neighborsOfHexagon:(Hexagon *)hexagon;

@@ -12,8 +12,22 @@
 
 @interface HexagonMapLayer : CCLayer <UIGestureRecognizerDelegate> {
 	HexagonMap *_map;
-	Hexagon *_selectedHexagon;
+	Hexagon *_activatedHexagon, *_hexagonTouchBegan, *_hexagonTouchEnded;
 }
+
+- (void)activateHexagon:(Hexagon *)hexagon;
+- (void)deactivateHexagon;
+
+- (void)changeColor;
+- (void)increment;
+- (void)decrement;
+
+#pragma mark Battle Methods
+
+- (void)performBattleBetweenAttacker:(Hexagon *)attacker andDefender:(Hexagon *)defender;
+- (void)performRiskyRiskBattleBetweenAttacker:(Hexagon *)attacker andDefender:(Hexagon *)defender;
+
+#pragma mark UIGestureRecognizer Handlers
 
 - (void)handlePinch:(UIPinchGestureRecognizer *)sender;
 - (void)handlePan:(UIPanGestureRecognizer *)sender;

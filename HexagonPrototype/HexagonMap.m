@@ -10,7 +10,7 @@
 
 @implementation HexagonMap
 
-- (id)initUsingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns {
+- (id)initInLayer:(CCLayer *)layer usingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns {
 	if (self = [super init]) {
 		_rows = rows;
 		_columns = columns;
@@ -32,6 +32,7 @@
 			for (int j = 0; j < self.columns; j++) {
 				hexagon = [[Hexagon alloc] initWithSpriteFrameName:@"blue.png"];
 				hexagon.mapCoordinates = ccp(i, j);
+				hexagon.value = 3;
 				
 				if (i % 2 == 0) {
 					hexagon.sprite.position = ccp(width*j + radius, rowHeight*i + radius);
@@ -39,6 +40,8 @@
 					hexagon.sprite.position = ccp(width*j + halfWidth + radius, rowHeight*i + radius);
 				}
 				
+				hexagon.valueLabel.position = hexagon.sprite.position;
+				[layer addChild:hexagon.valueLabel];
 				[batch addChild:hexagon.sprite];
 				[column insertObject:hexagon atIndex:j];
 			}
