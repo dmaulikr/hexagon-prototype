@@ -33,6 +33,10 @@
 		
 		// Generate a map
 		_map = [[HexagonMap alloc] initInLayer:self usingBatchNode:batchNode withRows:12 andColumns:12];
+		
+		// Manual positioning - this should eventually be automatic
+		self.scale = 0.28;
+		self.position = ccp(-155, -100);
 	}
 	return self;
 }

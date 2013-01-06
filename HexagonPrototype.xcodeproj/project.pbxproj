@@ -14,12 +14,6 @@
 		2707AE27169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE23169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz */; };
 		2707AE28169954FD0014D2E9 /* HexagonSprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE24169954FD0014D2E9 /* HexagonSprites.plist */; };
 		2707AE29169954FD0014D2E9 /* HexagonSprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE25169954FD0014D2E9 /* HexagonSprites.pvr.ccz */; };
-		2707AE3016995B460014D2E9 /* color-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2A16995B460014D2E9 /* color-button-selected.png */; };
-		2707AE3116995B460014D2E9 /* color-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2B16995B460014D2E9 /* color-button.png */; };
-		2707AE3216995B460014D2E9 /* decrement-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2C16995B460014D2E9 /* decrement-button-selected.png */; };
-		2707AE3316995B460014D2E9 /* decrement-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2D16995B460014D2E9 /* decrement-button.png */; };
-		2707AE3416995B460014D2E9 /* increment-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2E16995B460014D2E9 /* increment-button-selected.png */; };
-		2707AE3516995B460014D2E9 /* increment-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE2F16995B460014D2E9 /* increment-button.png */; };
 		27B77306169741F2003E31FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77305169741F2003E31FC /* QuartzCore.framework */; };
 		27B77308169741F2003E31FC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77307169741F2003E31FC /* OpenGLES.framework */; };
 		27B7730A169741F2003E31FC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77309169741F2003E31FC /* OpenAL.framework */; };
@@ -163,12 +157,6 @@
 		2707AE23169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HexagonSprites-hd.pvr.ccz"; path = "Resources/HexagonSprites-hd.pvr.ccz"; sourceTree = "<group>"; };
 		2707AE24169954FD0014D2E9 /* HexagonSprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HexagonSprites.plist; path = Resources/HexagonSprites.plist; sourceTree = "<group>"; };
 		2707AE25169954FD0014D2E9 /* HexagonSprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = HexagonSprites.pvr.ccz; path = Resources/HexagonSprites.pvr.ccz; sourceTree = "<group>"; };
-		2707AE2A16995B460014D2E9 /* color-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-button-selected.png"; sourceTree = "<group>"; };
-		2707AE2B16995B460014D2E9 /* color-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-button.png"; sourceTree = "<group>"; };
-		2707AE2C16995B460014D2E9 /* decrement-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decrement-button-selected.png"; sourceTree = "<group>"; };
-		2707AE2D16995B460014D2E9 /* decrement-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decrement-button.png"; sourceTree = "<group>"; };
-		2707AE2E16995B460014D2E9 /* increment-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "increment-button-selected.png"; sourceTree = "<group>"; };
-		2707AE2F16995B460014D2E9 /* increment-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "increment-button.png"; sourceTree = "<group>"; };
 		27B77301169741F2003E31FC /* HexagonPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexagonPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B77305169741F2003E31FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		27B77307169741F2003E31FC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -525,12 +513,6 @@
 		27B77318169741F2003E31FC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2707AE2A16995B460014D2E9 /* color-button-selected.png */,
-				2707AE2B16995B460014D2E9 /* color-button.png */,
-				2707AE2C16995B460014D2E9 /* decrement-button-selected.png */,
-				2707AE2D16995B460014D2E9 /* decrement-button.png */,
-				2707AE2E16995B460014D2E9 /* increment-button-selected.png */,
-				2707AE2F16995B460014D2E9 /* increment-button.png */,
 				2707AE22169954FD0014D2E9 /* HexagonSprites-hd.plist */,
 				2707AE23169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz */,
 				2707AE24169954FD0014D2E9 /* HexagonSprites.plist */,
@@ -986,12 +968,6 @@
 				2707AE27169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */,
 				2707AE28169954FD0014D2E9 /* HexagonSprites.plist in Resources */,
 				2707AE29169954FD0014D2E9 /* HexagonSprites.pvr.ccz in Resources */,
-				2707AE3016995B460014D2E9 /* color-button-selected.png in Resources */,
-				2707AE3116995B460014D2E9 /* color-button.png in Resources */,
-				2707AE3216995B460014D2E9 /* decrement-button-selected.png in Resources */,
-				2707AE3316995B460014D2E9 /* decrement-button.png in Resources */,
-				2707AE3416995B460014D2E9 /* increment-button-selected.png in Resources */,
-				2707AE3516995B460014D2E9 /* increment-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

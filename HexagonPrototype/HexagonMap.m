@@ -32,7 +32,10 @@
 			for (int j = 0; j < self.columns; j++) {
 				hexagon = [[Hexagon alloc] initWithSpriteFrameName:@"blue.png"];
 				hexagon.mapCoordinates = ccp(i, j);
-				hexagon.value = 3;
+				
+				// Randomize the map
+				hexagon.color = arc4random() % 3;
+				hexagon.value = (arc4random() % 6) + 5;
 				
 				if (i % 2 == 0) {
 					hexagon.sprite.position = ccp(width*j + radius, rowHeight*i + radius);

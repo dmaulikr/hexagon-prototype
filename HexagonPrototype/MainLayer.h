@@ -14,7 +14,8 @@
 	HexagonMapLayer *_hexLayer;
 	
 	CCMenu *_menu;
-	CCMenuItemImage *_colorButton, *_incrementButton, *_decrementButton;
+	CCMenuItemSprite *_incrementButton;
+	CCMenuItemImage *_colorButton, *_decrementButton;
 }
 
 + (CCScene *)scene;
