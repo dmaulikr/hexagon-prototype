@@ -16,6 +16,7 @@
 	CCMenu *_menu;
 	CCMenuItemSprite *_incrementButton;
 	CCMenuItemImage *_colorButton, *_decrementButton;
+	CCLabelTTF *_blueCountLabel, *_greenCountLabel;
 }
 
 + (CCScene *)scene;

@@ -11,9 +11,11 @@
 #import "HexagonMap.h"
 
 @interface HexagonMapLayer : CCLayer <UIGestureRecognizerDelegate> {
-	HexagonMap *_map;
 	Hexagon *_activatedHexagon, *_hexagonTouchBegan, *_hexagonTouchEnded;
 }
+
+@property (nonatomic, strong) HexagonMap *map;
+@property (nonatomic, strong) NSMutableDictionary *tallies;
 
 - (void)activateHexagon:(Hexagon *)hexagon;
 - (void)deactivateHexagon;

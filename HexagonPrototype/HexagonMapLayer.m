@@ -32,7 +32,19 @@
 		[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"HexagonSprites.plist"];
 		
 		// Generate a map
-		_map = [[HexagonMap alloc] initInLayer:self usingBatchNode:batchNode withRows:12 andColumns:12];
+		self.map = [[HexagonMap alloc] initInLayer:self usingBatchNode:batchNode withRows:12 andColumns:12];
+		
+		// Populate tallies dictionary
+		NSArray *values = [[NSArray alloc] initWithObjects:
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kBlue]],
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kGreen]],
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kOrange]],
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kPurple]],
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kRed]],
+						   [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kYellow]],
+						   nil];
+		NSArray *keys = [[NSArray alloc] initWithObjects:@"kBlue", @"kGreen", @"kOrange", @"kPurple", @"kRed", @"kYellow", nil];
+		self.tallies = [[NSMutableDictionary alloc] initWithObjects:values forKeys:keys];
 		
 		// Manual positioning - this should eventually be automatic
 		self.scale = 0.28;
@@ -148,6 +160,21 @@
 		defender.value = defenderValue;
 		NSLog(@"Defender wins!");
 	}
+	
+	NSNumber *blueTally = [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kBlue]];
+	NSNumber *greenTally = [NSNumber numberWithInt:[self.map numberOfHexagonsWithColor:kGreen]];
+	[self.tallies setValue:blueTally forKey:@"kBlue"];
+	[self.tallies setValue:greenTally forKey:@"kGreen"];
+}
+
+# pragma mark Property Overrides
+
+- (int)blueCount {
+	return [self.map numberOfHexagonsWithColor:kBlue];
+}
+
+- (int)greenCount {
+	return [self.map numberOfHexagonsWithColor:kGreen];
 }
 
 #pragma mark Cocos2D Touch Methods Overrides
@@ -160,7 +187,7 @@
 	touchLocation = [[CCDirector sharedDirector] convertToGL:touchLocation];
 	touchLocation = [self convertToNodeSpace:touchLocation];
 	
-	_hexagonTouchBegan = [_map findHexagonContainingPoint:touchLocation];
+	_hexagonTouchBegan = [self.map hexagonContainingPoint:touchLocation];
 }
 
 - (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -180,7 +207,7 @@
 	touchLocation = [[CCDirector sharedDirector] convertToGL:touchLocation];
 	touchLocation = [self convertToNodeSpace:touchLocation];
 	
-	_hexagonTouchEnded = [_map findHexagonContainingPoint:touchLocation];
+	_hexagonTouchEnded = [self.map hexagonContainingPoint:touchLocation];
 	
 	if (!_hexagonTouchEnded) {
 		[self deactivateHexagon];
@@ -191,12 +218,14 @@
 		if (!_activatedHexagon) {
 			[self activateHexagon:_hexagonTouchBegan];
 		} else {
-			if ([[_map neighborsOfHexagon:_activatedHexagon] containsObject:_hexagonTouchEnded]) {
+			/*
+			if ([[self.map neighborsOfHexagon:_activatedHexagon] containsObject:_hexagonTouchEnded]) {
 				[self performBattleBetweenAttacker:_activatedHexagon andDefender:_hexagonTouchEnded];
 			}
+			 */
 			[self deactivateHexagon];
 		}
-	} else if ([[_map neighborsOfHexagon:_hexagonTouchBegan] containsObject:_hexagonTouchEnded]) {
+	} else if ([[self.map neighborsOfHexagon:_hexagonTouchBegan] containsObject:_hexagonTouchEnded]) {
 		[self performBattleBetweenAttacker:_hexagonTouchBegan andDefender:_hexagonTouchEnded];
 		[self deactivateHexagon];
 	}

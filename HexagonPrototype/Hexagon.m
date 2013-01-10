@@ -16,7 +16,7 @@
 		_spriteFrameName = spriteFrameName;
 		_spriteFrameNameSelected = [spriteFrameName stringByReplacingOccurrencesOfString:@".png" withString:@"-selected.png"];
 		
-		_valueLabel = [CCLabelTTF labelWithString:@"" fontName:@"Helvetica" fontSize:20];
+		_valueLabel = [CCLabelTTF labelWithString:@"" fontName:@"Helvetica" fontSize:50];
 	}
 	return self;
 }
@@ -45,7 +45,7 @@
 
 - (void)setValue:(float)value {
 	_value = value;
-	_valueLabel.string = [NSString stringWithFormat:@"%.01f", value];
+	_valueLabel.string = [NSString stringWithFormat:@"%.f", value];
 }
 
 - (void)setColor:(Color)color {

@@ -18,9 +18,14 @@
 @property (nonatomic, readonly) int columns;
 
 - (id)initInLayer:(CCLayer *)layer usingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns;
-- (Hexagon *)findHexagonContainingPoint:(CGPoint)point;
-- (CGPoint)neighborOfHexagon:(Hexagon *)hexagon inDirection:(Direction)direction;
-- (NSSet *)neighborsOfHexagon:(Hexagon *)hexagon;
+- (void)generateRandomMap;
+- (int)numberOfHexagonsWithColor:(Color)color;
+
+#pragma mark Finding Hexagons
+
+- (Hexagon *)hexagonContainingPoint:(CGPoint)point;
 - (Hexagon *)hexagonAtMapCoordinates:(CGPoint)coordinates;
+- (Hexagon *)neighborOfHexagon:(Hexagon *)hexagon inDirection:(Direction)direction;
+- (NSSet *)neighborsOfHexagon:(Hexagon *)hexagon;
 
 @end

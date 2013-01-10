@@ -50,8 +50,24 @@
 		_menu = [CCMenu menuWithItems:_colorButton, _incrementButton, _decrementButton, nil];
 		_menu.position = ccp(0, 0);
 		[self addChild:_menu];
+		
+		// Create count labels
+		_blueCountLabel = [CCLabelTTF labelWithString:@"B: 36" fontName:@"Helvetica" fontSize:20];
+		_greenCountLabel = [CCLabelTTF labelWithString:@"G: 36" fontName:@"Helvetica" fontSize:20];
+		_blueCountLabel.position = ccp(450, 100);
+		_greenCountLabel.position = ccp(450, 210);
+		
+		[self addChild:_blueCountLabel];
+		[self addChild:_greenCountLabel];
+		
+		[self scheduleUpdate];
 	}
 	return self;
+}
+
+- (void)update:(ccTime)dt {
+	_blueCountLabel.string = [NSString stringWithFormat:@"B: %d", [[_hexLayer.tallies valueForKey:@"kBlue"] intValue]];
+	_greenCountLabel.string = [NSString stringWithFormat:@"G: %d", [[_hexLayer.tallies valueForKey:@"kGreen"] intValue]];
 }
 
 @end

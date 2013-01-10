@@ -8,6 +8,10 @@
 
 #import "HexagonMap.h"
 
+const Color kNeutralColor = kOrange;
+const Color kPlayer1Color = kBlue;
+const Color kPlayer2Color = kGreen;
+
 @implementation HexagonMap
 
 - (id)initInLayer:(CCLayer *)layer usingBatchNode:(CCSpriteBatchNode *)batch withRows:(int)rows andColumns:(int)columns {
@@ -31,11 +35,8 @@
 			
 			for (int j = 0; j < self.columns; j++) {
 				hexagon = [[Hexagon alloc] initWithSpriteFrameName:@"blue.png"];
+				hexagon.color = kOrange;
 				hexagon.mapCoordinates = ccp(i, j);
-				
-				// Randomize the map
-				hexagon.color = arc4random() % 3;
-				hexagon.value = (arc4random() % 6) + 5;
 				
 				if (i % 2 == 0) {
 					hexagon.sprite.position = ccp(width*j + radius, rowHeight*i + radius);
@@ -49,11 +50,67 @@
 				[column insertObject:hexagon atIndex:j];
 			}
 		}
+		
+		[self generateRandomMap];
 	}
+	
 	return self;
 }
 
-- (Hexagon *)findHexagonContainingPoint:(CGPoint)point {
+- (void)generateRandomMap {
+	int randomX, randomY, i = 0;
+	Hexagon *hexagon;
+	
+	for (NSMutableArray *row in _map) {
+		for (Hexagon *hex in row) {
+			hex.value = (arc4random() % 4) + 1;
+			hex.color = kNeutralColor;
+		}
+	}
+	
+	while (i < 36) {
+		randomX = arc4random() % self.rows;
+		randomY = arc4random() % self.columns;
+		hexagon = [(NSMutableArray *)[_map objectAtIndex:randomX] objectAtIndex:randomY];
+		if (hexagon.color == kNeutralColor) {
+			hexagon.color = kPlayer1Color;
+			hexagon.value = 5;
+			i++;
+		} else {
+			continue;
+		}
+	}
+	
+	i = 0;
+	while (i < 36) {
+		randomX = arc4random() % self.rows;
+		randomY = arc4random() % self.columns;
+		hexagon = [(NSMutableArray *)[_map objectAtIndex:randomX] objectAtIndex:randomY];
+		if (hexagon.color == kNeutralColor) {
+			hexagon.color = kPlayer2Color;
+			hexagon.value = 5;
+			i++;
+		} else {
+			continue;
+		}
+	}
+}
+
+- (int)numberOfHexagonsWithColor:(Color)color {
+	int count = 0;
+	for (NSMutableArray *row in _map) {
+		for (Hexagon *hexagon in row) {
+			if (hexagon.color == color) {
+				count++;
+			}
+		}
+	}
+	return count;
+}
+
+#pragma mark Finding Hexagons
+
+- (Hexagon *)hexagonContainingPoint:(CGPoint)point {
 	for (NSMutableArray *row in _map) {
 		for (Hexagon *hexagon in row) {
 			if ([hexagon isInBounds:point]) {
@@ -64,7 +121,13 @@
 	return nil;
 }
 
-- (CGPoint)neighborOfHexagon:(Hexagon *)hexagon inDirection:(Direction)direction {
+- (Hexagon *)hexagonAtMapCoordinates:(CGPoint)coordinates {
+	if (coordinates.x < 0 || coordinates.x >= _rows || coordinates.y < 0 || coordinates.y >= _columns) return nil;
+	NSMutableArray *row = [_map objectAtIndex:coordinates.x];
+	return [row objectAtIndex:coordinates.y];
+}
+
+- (Hexagon *)neighborOfHexagon:(Hexagon *)hexagon inDirection:(Direction)direction {
 	CGPoint coordinates = hexagon.mapCoordinates;
 	if ((int)coordinates.x % 2 == 0) {
 		switch (direction) {
@@ -87,18 +150,19 @@
 			default: break;
 		}
 	}
-	return coordinates;
+	
+	return [self hexagonAtMapCoordinates:coordinates];
 }
 
 - (NSSet *)neighborsOfHexagon:(Hexagon *)hexagon {
 	NSMutableArray *neightbors = [[NSMutableArray alloc] initWithCapacity:6];
 	
-	Hexagon *neighborNE = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kNorthEast]];
-	Hexagon *neighborSE = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kSouthEast]];
-	Hexagon *neighborSW = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kSouthWest]];
-	Hexagon *neighborNW = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kNorthWest]];
-	Hexagon *neighborE  = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kEast]];
-	Hexagon *neighborW  = [self hexagonAtMapCoordinates:[self neighborOfHexagon:hexagon inDirection:kWest]];
+	Hexagon *neighborNE = [self neighborOfHexagon:hexagon inDirection:kNorthEast];
+	Hexagon *neighborSE = [self neighborOfHexagon:hexagon inDirection:kSouthEast];
+	Hexagon *neighborSW = [self neighborOfHexagon:hexagon inDirection:kSouthWest];
+	Hexagon *neighborNW = [self neighborOfHexagon:hexagon inDirection:kNorthWest];
+	Hexagon *neighborE  = [self neighborOfHexagon:hexagon inDirection:kEast];
+	Hexagon *neighborW  = [self neighborOfHexagon:hexagon inDirection:kWest];
 	
 	if (neighborNE != nil) [neightbors addObject:neighborNE];
 	if (neighborSE != nil) [neightbors addObject:neighborSE];
@@ -108,12 +172,6 @@
 	if (neighborW != nil) [neightbors addObject:neighborW];
 	
 	return [[NSSet alloc] initWithArray:neightbors];
-}
-
-- (Hexagon *)hexagonAtMapCoordinates:(CGPoint)coordinates {
-	if (coordinates.x < 0 || coordinates.x >= _rows || coordinates.y < 0 || coordinates.y >= _columns) return nil;
-	NSMutableArray *row = [_map objectAtIndex:coordinates.x];
-	return [row objectAtIndex:coordinates.y];
 }
 
 @end
