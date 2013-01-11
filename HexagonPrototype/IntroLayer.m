@@ -7,9 +7,6 @@
 //
 
 #import "IntroLayer.h"
-#import "MainLayer.h"
-
-#pragma mark - IntroLayer
 
 @implementation IntroLayer
 
@@ -40,7 +37,8 @@
 
 - (void)onEnter {
 	[super onEnter];
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[MainLayer scene]]];
+	HXGameController *gameController = [[HXGameController alloc] init];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[gameController gameScene]]];
 }
 
 @end

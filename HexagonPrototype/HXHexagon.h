@@ -16,7 +16,7 @@ typedef enum {
 	kNorthWest,
 	kEast,
 	kWest
-} Direction;
+} HXDirection;
 
 typedef enum {
 	kBlue = 0,
@@ -25,23 +25,23 @@ typedef enum {
 	kPurple = 3,
 	kRed = 4,
 	kYellow = 5
-} Color;
+} HXColor;
 
-@interface Hexagon : NSObject {
-	NSString *_spriteFrameName;
-	NSString *_spriteFrameNameSelected;
-}
+@interface HXHexagon : NSObject
 
+@property (nonatomic, strong) NSString *spriteFrameName;
+@property (nonatomic, strong) NSString *spriteFrameNameSelected;
 @property (nonatomic, strong) CCSprite *sprite;
 @property (nonatomic, assign) BOOL selected;
 @property (nonatomic, assign) CGPoint mapCoordinates;
 @property (nonatomic, readonly) CCLabelTTF *valueLabel;
 @property (nonatomic, assign) float value;
-@property (nonatomic, assign) Color color;
+@property (nonatomic, assign) HXColor color;
 
 - (id)initWithSpriteFrameName:(NSString *)spriteFrameName;
 - (BOOL)isInBounds:(CGPoint)point;
 
+#pragma mark -
 #pragma mark Dimensional Methods
 
 - (float)radius;

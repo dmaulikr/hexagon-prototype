@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2707ADE9169747D80014D2E9 /* HexagonMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADE8169747D80014D2E9 /* HexagonMapLayer.m */; };
-		2707ADF116974A740014D2E9 /* Hexagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADF016974A740014D2E9 /* Hexagon.m */; };
-		2707ADFC16975DE40014D2E9 /* HexagonMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADFB16975DE40014D2E9 /* HexagonMap.m */; };
+		2707ADE9169747D80014D2E9 /* HXMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADE8169747D80014D2E9 /* HXMapLayer.m */; };
+		2707ADF116974A740014D2E9 /* HXHexagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADF016974A740014D2E9 /* HXHexagon.m */; };
+		2707ADFC16975DE40014D2E9 /* HXMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2707ADFB16975DE40014D2E9 /* HXMap.m */; };
 		2707AE26169954FD0014D2E9 /* HexagonSprites-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE22169954FD0014D2E9 /* HexagonSprites-hd.plist */; };
 		2707AE27169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE23169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz */; };
 		2707AE28169954FD0014D2E9 /* HexagonSprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE24169954FD0014D2E9 /* HexagonSprites.plist */; };
 		2707AE29169954FD0014D2E9 /* HexagonSprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2707AE25169954FD0014D2E9 /* HexagonSprites.pvr.ccz */; };
+		27884B31169F27540091DA1A /* HXHUDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27884B30169F27540091DA1A /* HXHUDLayer.m */; };
+		27884B37169F283F0091DA1A /* HXGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 27884B36169F283F0091DA1A /* HXGame.m */; };
+		27884B3A169F37C40091DA1A /* HXGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27884B39169F37C40091DA1A /* HXGameController.m */; };
+		27884B3D169F3E080091DA1A /* HXGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 27884B3C169F3E080091DA1A /* HXGameScene.m */; };
 		27B77306169741F2003E31FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77305169741F2003E31FC /* QuartzCore.framework */; };
 		27B77308169741F2003E31FC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77307169741F2003E31FC /* OpenGLES.framework */; };
 		27B7730A169741F2003E31FC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B77309169741F2003E31FC /* OpenAL.framework */; };
@@ -143,20 +147,27 @@
 		27B7749D169741F5003E31FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7749C169741F5003E31FC /* main.m */; };
 		27B774A0169741F5003E31FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7749F169741F5003E31FC /* AppDelegate.m */; };
 		27B774A6169741F5003E31FC /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B774A5169741F5003E31FC /* IntroLayer.m */; };
-		27B774AF1697423F003E31FC /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B774AE1697423F003E31FC /* MainLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2707ADE7169747D80014D2E9 /* HexagonMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonMapLayer.h; sourceTree = "<group>"; };
-		2707ADE8169747D80014D2E9 /* HexagonMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonMapLayer.m; sourceTree = "<group>"; };
-		2707ADEF16974A740014D2E9 /* Hexagon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hexagon.h; sourceTree = "<group>"; };
-		2707ADF016974A740014D2E9 /* Hexagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hexagon.m; sourceTree = "<group>"; };
-		2707ADFA16975DE40014D2E9 /* HexagonMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonMap.h; sourceTree = "<group>"; };
-		2707ADFB16975DE40014D2E9 /* HexagonMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonMap.m; sourceTree = "<group>"; };
+		2707ADE7169747D80014D2E9 /* HXMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMapLayer.h; sourceTree = "<group>"; };
+		2707ADE8169747D80014D2E9 /* HXMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMapLayer.m; sourceTree = "<group>"; };
+		2707ADEF16974A740014D2E9 /* HXHexagon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHexagon.h; sourceTree = "<group>"; };
+		2707ADF016974A740014D2E9 /* HXHexagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHexagon.m; sourceTree = "<group>"; };
+		2707ADFA16975DE40014D2E9 /* HXMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMap.h; sourceTree = "<group>"; };
+		2707ADFB16975DE40014D2E9 /* HXMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMap.m; sourceTree = "<group>"; };
 		2707AE22169954FD0014D2E9 /* HexagonSprites-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HexagonSprites-hd.plist"; path = "Resources/HexagonSprites-hd.plist"; sourceTree = "<group>"; };
 		2707AE23169954FD0014D2E9 /* HexagonSprites-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HexagonSprites-hd.pvr.ccz"; path = "Resources/HexagonSprites-hd.pvr.ccz"; sourceTree = "<group>"; };
 		2707AE24169954FD0014D2E9 /* HexagonSprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HexagonSprites.plist; path = Resources/HexagonSprites.plist; sourceTree = "<group>"; };
 		2707AE25169954FD0014D2E9 /* HexagonSprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = HexagonSprites.pvr.ccz; path = Resources/HexagonSprites.pvr.ccz; sourceTree = "<group>"; };
+		27884B2F169F27540091DA1A /* HXHUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHUDLayer.h; sourceTree = "<group>"; };
+		27884B30169F27540091DA1A /* HXHUDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHUDLayer.m; sourceTree = "<group>"; };
+		27884B35169F283F0091DA1A /* HXGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXGame.h; sourceTree = "<group>"; };
+		27884B36169F283F0091DA1A /* HXGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXGame.m; sourceTree = "<group>"; };
+		27884B38169F37C40091DA1A /* HXGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXGameController.h; sourceTree = "<group>"; };
+		27884B39169F37C40091DA1A /* HXGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXGameController.m; sourceTree = "<group>"; };
+		27884B3B169F3E080091DA1A /* HXGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXGameScene.h; sourceTree = "<group>"; };
+		27884B3C169F3E080091DA1A /* HXGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXGameScene.m; sourceTree = "<group>"; };
 		27B77301169741F2003E31FC /* HexagonPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexagonPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B77305169741F2003E31FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		27B77307169741F2003E31FC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -428,8 +439,6 @@
 		27B7749F169741F5003E31FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27B774A4169741F5003E31FC /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		27B774A5169741F5003E31FC /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		27B774AD1697423F003E31FC /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
-		27B774AE1697423F003E31FC /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,15 +461,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2707ADEB16974A370014D2E9 /* Hexagons */ = {
+		2707ADEB16974A370014D2E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2707ADFA16975DE40014D2E9 /* HexagonMap.h */,
-				2707ADFB16975DE40014D2E9 /* HexagonMap.m */,
-				2707ADEF16974A740014D2E9 /* Hexagon.h */,
-				2707ADF016974A740014D2E9 /* Hexagon.m */,
+				27884B35169F283F0091DA1A /* HXGame.h */,
+				27884B36169F283F0091DA1A /* HXGame.m */,
+				2707ADFA16975DE40014D2E9 /* HXMap.h */,
+				2707ADFB16975DE40014D2E9 /* HXMap.m */,
+				2707ADEF16974A740014D2E9 /* HXHexagon.h */,
+				2707ADF016974A740014D2E9 /* HXHexagon.m */,
 			);
-			name = Hexagons;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		27B772F6169741F2003E31FC = {
@@ -499,9 +510,9 @@
 		27B77317169741F2003E31FC /* HexagonPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				27B7749E169741F5003E31FC /* AppDelegate.h */,
-				27B7749F169741F5003E31FC /* AppDelegate.m */,
-				2707ADEB16974A370014D2E9 /* Hexagons */,
+				27884B38169F37C40091DA1A /* HXGameController.h */,
+				27884B39169F37C40091DA1A /* HXGameController.m */,
+				2707ADEB16974A370014D2E9 /* Models */,
 				27B774AC16974218003E31FC /* Layers */,
 				27B77318169741F2003E31FC /* Resources */,
 				27B77330169741F2003E31FC /* libs */,
@@ -882,6 +893,10 @@
 		27B7749A169741F5003E31FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27B7749E169741F5003E31FC /* AppDelegate.h */,
+				27B7749F169741F5003E31FC /* AppDelegate.m */,
+				27B774A4169741F5003E31FC /* IntroLayer.h */,
+				27B774A5169741F5003E31FC /* IntroLayer.m */,
 				27B7749B169741F5003E31FC /* Prefix.pch */,
 				27B7749C169741F5003E31FC /* main.m */,
 			);
@@ -891,12 +906,12 @@
 		27B774AC16974218003E31FC /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				2707ADE7169747D80014D2E9 /* HexagonMapLayer.h */,
-				2707ADE8169747D80014D2E9 /* HexagonMapLayer.m */,
-				27B774AD1697423F003E31FC /* MainLayer.h */,
-				27B774AE1697423F003E31FC /* MainLayer.m */,
-				27B774A4169741F5003E31FC /* IntroLayer.h */,
-				27B774A5169741F5003E31FC /* IntroLayer.m */,
+				27884B3B169F3E080091DA1A /* HXGameScene.h */,
+				27884B3C169F3E080091DA1A /* HXGameScene.m */,
+				27884B2F169F27540091DA1A /* HXHUDLayer.h */,
+				27884B30169F27540091DA1A /* HXHUDLayer.m */,
+				2707ADE7169747D80014D2E9 /* HXMapLayer.h */,
+				2707ADE8169747D80014D2E9 /* HXMapLayer.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -1086,10 +1101,13 @@
 				27B7749D169741F5003E31FC /* main.m in Sources */,
 				27B774A0169741F5003E31FC /* AppDelegate.m in Sources */,
 				27B774A6169741F5003E31FC /* IntroLayer.m in Sources */,
-				27B774AF1697423F003E31FC /* MainLayer.m in Sources */,
-				2707ADE9169747D80014D2E9 /* HexagonMapLayer.m in Sources */,
-				2707ADF116974A740014D2E9 /* Hexagon.m in Sources */,
-				2707ADFC16975DE40014D2E9 /* HexagonMap.m in Sources */,
+				2707ADE9169747D80014D2E9 /* HXMapLayer.m in Sources */,
+				2707ADF116974A740014D2E9 /* HXHexagon.m in Sources */,
+				2707ADFC16975DE40014D2E9 /* HXMap.m in Sources */,
+				27884B31169F27540091DA1A /* HXHUDLayer.m in Sources */,
+				27884B37169F283F0091DA1A /* HXGame.m in Sources */,
+				27884B3A169F37C40091DA1A /* HXGameController.m in Sources */,
+				27884B3D169F3E080091DA1A /* HXGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

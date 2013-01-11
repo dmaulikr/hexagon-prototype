@@ -6,9 +6,9 @@
 //  Copyright 2013 kilovolt. All rights reserved.
 //
 
-#import "Hexagon.h"
+#import "HXHexagon.h"
 
-@implementation Hexagon
+@implementation HXHexagon
 
 - (id)initWithSpriteFrameName:(NSString *)spriteFrameName {
 	if (self = [super init]) {
@@ -32,6 +32,7 @@
 	return NO;
 }
 
+#pragma mark -
 #pragma mark Property Overrides
 
 - (void)setSelected:(BOOL)selected {
@@ -48,7 +49,7 @@
 	_valueLabel.string = [NSString stringWithFormat:@"%.f", value];
 }
 
-- (void)setColor:(Color)color {
+- (void)setColor:(HXColor)color {
 	_color = color;
 	switch (color) {
 		case kBlue: _spriteFrameName = @"blue.png"; break;
@@ -67,6 +68,7 @@
 	}
 }
 
+#pragma mark -
 #pragma mark Dimensional Methods
 
 - (float)radius {
